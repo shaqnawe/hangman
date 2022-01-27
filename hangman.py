@@ -30,7 +30,7 @@ def hangman(categories,random_word):
         
         # Prints the secret word and updates according to correct user_guess
         print(f'Secret Word: {secret_word}')
-        
+        # Display the user selected category 
         print(f'Your category is: {categories}')
         # Takes user input to check against secret word
         user_guess = input('What is your guess? ')
