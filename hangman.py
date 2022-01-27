@@ -34,7 +34,10 @@ def hangman(categories,random_word):
         print(f'Your category is: {categories}')
         # Takes user input to check against secret word
         user_guess = input('What is your guess? ')
-        
+        if(len(user_guess) > 1):
+            print('Please enter one letter at a time.')
+            while len(user_guess) > 1:
+                user_guess = input('What is your guess? ')
         # Check to see if user guess is present in random_word
         # If user_guess is correct, replace '_' with user_guess
         if user_guess in random_word.lower():
